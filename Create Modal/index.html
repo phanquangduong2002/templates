@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Modal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+    <button class="open-modal-btn">Sign in</button>
+    <div class="modal-container">
+        <div class="modal-inner">
+            <div class="modal-header">
+                <p>Đăng nhập</p>
+                <span class="modal-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form">
+                    <label for="fullname" class="modal-form__label">Tên đăng nhập</label>
+                    <input type="text" name="name" id="'fullname" placeholder="VD: Dương Phan" class="modal-form__control">
+                </div>
+
+                <div class="modal-form">
+                    <label for="password" class="modal-form__label">Mật khẩu</label>
+                    <input type="password" name="password" id="password" placeholder="Nhập mật khẩu" class="modal-form__control">
+                </div>
+
+                <button class="modal-form__submit">Đăng nhập</button>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/app.js"></script>
+</body>
+</html>
