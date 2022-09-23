@@ -1,0 +1,111 @@
+html {
+  font-family: "Poppins" !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(135deg, #e9defa 10%, #fbfcdb 100%);
+  overflow: hidden !important;
+}
+
+.container {
+  min-width: 1210px !important;
+  height: 100vh;
+  margin: 20px auto;
+}
+
+.box-shadow {
+  box-shadow: rgba(4, 9, 20, 0.03) 0px 0.46875rem 2.1875rem,
+    rgba(4, 9, 20, 0.03) 0px 0.9375rem 1.40625rem,
+    rgba(4, 9, 20, 0.05) 0px 0.25rem 0.53125rem,
+    rgba(4, 9, 20, 0.03) 0px 0.125rem 0.1875rem;
+}
+
+.bg-color {
+  background: rgb(250, 251, 252);
+}
+
+.rounded-xl {
+  border-radius: 0.5rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-80 {
+  height: 80%;
+}
+
+.h-400 {
+  min-height: 360px;
+}
+
+.w-25 {
+  width: 28% !important;
+}
+
+.text-32 {
+  font-size: 32px;
+}
+
+.text-22 {
+  font-size: 20px;
+}
+
+.text-28 {
+  font-size: 28px;
+}
+.text-30 {
+  font-size: 30px;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+.font-500 {
+  font-weight: 500;
+}
+
+.switch {
+  position: relative;
+  width: 70px;
+  margin: 0 15px;
+  height: 35px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.3s;
+  border-radius: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 28px;
+  width: 28px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+
+input:checked + .slider {
+  background-color: #ff278c;
+}
+
+input:checked + .slider::before {
+  transform: translateX(34px);
+}
